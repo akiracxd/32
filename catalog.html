@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог книг | Районная библиотека</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Районная библиотека им. Читателя</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main>
+        <h1>Каталог книг</h1>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск по названию или автору">
+            <button id="searchButton">Найти</button>
+        </div>
+        
+        <div class="filters">
+            <select id="genreFilter">
+                <option value="all">Все жанры</option>
+                <option value="Художественная">Художественная литература</option>
+                <option value="Фантастика">Фантастика</option>
+                <option value="Детектив">Детектив</option>
+                <option value="Научная">Научная литература</option>
+                <option value="История">История</option>
+            </select>
+        </div>
+        
+        <div class="book-list" id="bookList">
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 Районная библиотека Челябинска. Все права защищены.</p>
+        <p>Контактный email: library@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
